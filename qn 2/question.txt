@@ -1,0 +1,38 @@
+Shortest reach is an important part while traversing a graph, given the following graph:
+
+
+
+Here are the basic descriptions:
+number of nodes (n) : 5
+number of edges (m): 3
+Adjacent edges (e): [1,2], [1,3], [3,4], [5]
+The starting node (s): 1 (labelled 1)
+Weight of every edge (w): 6
+
+All distances are from the start node 1, Outputs are calculated for distances to nodes 2 through 5: And the 
+distances d are will arranged in the following format [6, 6, 12, -1]. Each edge is 6 units, and the unreachable node 5 has the 
+required return distance of -1.
+
+Graph to work on
+graph_assess3_3.png
+
+1. Required descriptions
+
+- How many nodes n?
+- How many edges m?
+- How many adjacent edges e?
+
+Tasks to be completed
+
+Complete the bfs function, If a node is unreachable, its distance is -1.
+
+bfs has the following parameter(s):
+
+int n: the number of nodes
+int m: the number of edges
+int e[]: start and end nodes for edges
+int s: the node to start traversals from
+Consider the weight (w) of every edge to be 4.
+
+Returns
+int d[ ]: the distances to nodes in increasing distance number order, ensure the negative values at the end of the array
